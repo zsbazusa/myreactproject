@@ -1,6 +1,12 @@
-function Hello() {
-   return  <h1>Hello from a component</h1>;
-  }
+function Hello({person}) {
   
-  export default Hello
+   return (
+      <div>
+         <h1>
+            {person.message} {person.name} {person.seatNumbers}
+         </h1>
+      </div> 
+      );
+  }
+  export default Hello;
   
